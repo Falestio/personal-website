@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-slate-900 min-h-screen;
+
+}
+
+p, h1, h2, h3, h4, h5, h6, li, ul, a {
+    @apply text-gray-200;
+}
+
+.article > * {
+    @apply mb-6;
+}
+
+.article p, ul {
+    @apply text-base;
+    line-height: 30px;
+}
+
+.article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
+    @apply mb-3;
+}
+
+.article h1 {
+    @apply text-h1 font-bold text-pink-400;
+}
+
+.article h2 a {
+    @apply text-h2 font-bold text-blue-400 no-underline;
+}
+
+.article h3 a{
+    @apply text-h3 font-bold text-lime-400 no-underline;
+}
+
+.article h4 a{
+    @apply text-h4 font-bold text-orange-400 no-underline;
+}
+
+.article h5 a{
+    @apply text-h5 font-bold text-green-400 no-underline;
+}
+
+.article h6 a{
+    @apply text-h6 font-bold text-blue-200 no-underline;
+} 
+
+.article strong {
+    @apply text-green-400;
+}
+
+.article a {
+    @apply text-yellow-300 underline;
+}
+
+.c { 
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .c {
+      width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .c {
+      width: 970px;
+    } 
+}
+@media (min-width: 1200px) {
+    .c {
+        width: 1170px;
+    }
+}
