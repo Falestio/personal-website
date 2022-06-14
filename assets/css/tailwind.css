@@ -40,7 +40,7 @@ p, h1, h2, h3, h4, h5, h6, li, ul, a {
     @apply text-h4 font-bold text-orange-400 no-underline;
 }
 
-.article h5 a{
+.article h5 {
     @apply text-h5 font-bold text-green-400 no-underline;
 }
 

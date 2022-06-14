@@ -49,3 +49,14 @@ Sebagian besar hardware server mendukung [pengelolaan out-of-band](https://www.y
 Komponen lainnya adalah sistem operasi server. Sistem operasi server, seperti Windows Server atau [Linux](https://www.techtarget.com/searchdatacenter/definition/Linux-operating-system), bertindak sebagai platform yang memungkinkan aplikasi berjalan. Sistem operasi menyediakan akses aplikasi ke sumber daya perangkat keras yang mereka butuhkan dan memungkinkan konektivitas jaringan.
 
 Aplikasi inilah yang memungkinkan server melakukan tugasnya. Misalnya, server database akan menjalankan aplikasi database. Demikian juga, server email perlu menjalankan aplikasi email.
+
+##### Sumber
+https://www.techtarget.com/whatis/definition/server
+
+##### Penulis
+Falestio Hanif Al Hakim - 6701213063 - D3SI-45-03
+
+Arsitektur Jaringan Komputer - Telkom University
+
+
+![](../../assets/images/goodfoto.jpg)
