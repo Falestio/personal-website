@@ -59,4 +59,4 @@ Falestio Hanif Al Hakim - 6701213063 - D3SI-45-03
 Arsitektur Jaringan Komputer - Telkom University
 
 
-![](../../assets/images/goodfoto.jpg)
+![](https://serving.photos.photobox.com/1180290514a51f54c41410c1dc4ba00030d6633635b012938aacc226fb5fc6088ef5004b.jpg)
