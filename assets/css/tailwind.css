@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SquareFont";
+    src: url("../fonts/SquareFont.eot");
+    src: url("../fonts/SquareFont.eot?#iefix") format("embedded-opentype"), url("../fonts/SquareFont.woff2") format("woff2"), url("../fonts/SquareFont.woff") format("woff"),
+        url("../fonts/SquareFont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FiraCode";
+    src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    font-family: "SquareFont";
+}
+
+p,
+ul,
+ol,
+span,
+label,
+input,
+li {
+    font-family: "Rubik";
+}
+
+p,
+pre,
+ul,
+ol,
+span,
+label,
+input,
+li,
+h1,
+h2,
+h3,
+h4,
+tr,
+td,
+thead,
+tbody,
+h5,
+h6 {
+    color: #ffffff;
+}
+
+input {
+    @apply bg-slate-700
+}
+
+body {
+    background: #202020;
+}
+
+.cc {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .cc {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .cc {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .cc {
+        width: 1170px;
+    }
+}
+
+.article * {
+    @apply my-5;
+}
+
+.article p, ul {
+    @apply leading-8;
+}
+
+.article p, ul {
+    @apply text-xl;
+}
+
+.article h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold
+}
+
+.article h1 {
+  @apply text-5xl
+}
+
+.article h2 {
+    @apply text-4xl;
+}
+
+.article h3 {
+  @apply text-3xl
+}
+
+.article h4 {
+  @apply text-2xl
+}
+
+.article h5 {
+  @apply text-xl
+}
+
+.article h6 {
+  @apply text-lg uppercase
+}
+
+.article hr {
+    @apply opacity-20 border-t-2 border-slate-600;
+}
+
+.article a {
+    @apply text-blue-500;
+}
+
+.article strong {
+    @apply font-bold text-blue-200;
+}
+
+.article ol {
+    @apply list-decimal ml-4;
+}
+
+.article ul {
+    @apply list-disc ml-4;
+}
+
+.article ul ul li {
+    list-style-type: square;
+    @apply ml-5;
+}
+
+.article code {
+    font-family: "FiraCode";
+    @apply text-lg p-1 bg-blue-300 bg-opacity-10 text-blue-300;  
+}
+
+.article pre {
+    @apply bg-stone-900 rounded p-5;
+}
+
+.article pre > code {
+    font-family: "FiraCode";
+    @apply bg-inherit text-lg;  
+}
+
+.article img {
+    @apply rounded w-full;
+}
+
+.article table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.article table thead tr {
+  color: #ffffff;
+  text-align: left;
+  @apply bg-slate-700;
+}
+
+.article table th,
+.article table td {
+    padding: 12px 15px;
+}
+
+.article table tbody tr:nth-of-type(even) {
+    @apply bg-stone-800;
+}
+
+.article table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+blockquote {
+  @apply bg-stone-900 rounded-lg border-2 p-8
+}
+
+blockquote:before {
+  color: #ccc;
+  position: absolute;
+  content: open-quote;
+  font-size: 8em;
+  opacity: 0.5;
+  line-height: 0.1em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 14px none #ffffff;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
