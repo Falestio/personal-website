@@ -1,8 +1,8 @@
 <template>  
 <footer class="w-full bg-slate-800">
-    <div class="grid grid-cols-12 w-full p-4">
+    <div class="grid grid-cols-12 w-full px-8 py-10">
         <div class="col-span-6 flex flex-col justify-between">
-            <div class="w-64">
+            <div class="w-64">  
                 <img src="@/assets/logos/falestiodev_logosvg_light.svg" alt="logo" />
             </div>
 
