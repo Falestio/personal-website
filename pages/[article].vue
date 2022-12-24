@@ -3,6 +3,7 @@ import prism from "markdown-it-prism"
 import markdownIt from "markdown-it"
 import markdownItAnchor from "markdown-it-anchor"
 import { htmlToToc } from "~~/utils/htmlToToc";
+import { convertDateFormat } from "~/utils/convertDateFormat"
  
 const md = new markdownIt({
     linkify: true,
@@ -19,6 +20,8 @@ const query = "*[_type == 'article' && slug.current == $slug]";
 const params = { slug: route.params.article }
 const contentData = await $sanity.fetch(query, params)
 const content = contentData[0]
+const contentUpdateDate = convertDateFormat(content._updatedAt) 
+const contentPublishedDate = convertDateFormat(content._createdAt)
 
 const article = md.render(content.body)
 const articleToc = htmlToToc(article)
@@ -37,16 +40,20 @@ const articleToc = htmlToToc(article)
             <!-- Jumbotron -->
             <div class="w-full bg-slate-800 py-16 mb-16">
                 <div class="cc">
-                    <!-- <ul class="flex gap-2 items-center mb-4">
-                        <li>This is breadcrumb1 ></li>
-                        <li>This is breadcrumb2</li>
-                        <li>This is breadcrumb3</li>
-                    </ul> -->
                     <h1 class="text-5xl">{{ content.title }}</h1>
-                    <span class="text-xl">{{ content.secondTitle }}</span>
+                    <div class="flex flex-col">
+                        <span class="text-xl">{{ content.secondTitle }}</span>
+                        <span class="text-lg">Diterbitkan Pada {{ contentPublishedDate }} | Diperbarui Pada {{ contentUpdateDate }}</span>
+                    </div>
                 </div>
             </div>
 
+            <DevOnly>
+                <h1>Dev Only Content</h1>
+                <pre>
+                    {{ content }}
+                </pre>
+            </DevOnly>
             <!-- Content -->
             <div class="cc grid grid-cols-12 gap-8">
                 <article class="col-span-9 article" v-html="article"></article>
