@@ -5,7 +5,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         projectId: 'yejoczzt',
         dataset: 'production',
         apiVersion: '2021-10-21',
-        useCdn: false,
+        useCdn: true,
     })
 
     nuxtApp.provide('sanity', sanity)
