@@ -14,12 +14,12 @@
             <h3 class="text-xl font-bold mb-4">Socials</h3>
             <ul class="flex flex-col gap-3">
                 <li>
-                    <NuxtLink to="https://www.linkedin.com/in/falestio-hanif-al-hakim-ab4610221/">
+                    <NuxtLink to="https://www.linkedin.com/in/falestio-hanif-al-hakim-ab4610221/" target="_blank">
                         LinkedIn
                     </NuxtLink>
                 </li>   
                 <li>
-                    <NuxtLink to="https://www.instagram.com/falestiohanif/">
+                    <NuxtLink to="https://www.instagram.com/falestiohanif/" target="_blank">
                         Instagram
                     </NuxtLink>
                 </li>
@@ -35,7 +35,7 @@
                 </li>
                 
                 <li>
-                    <NuxtLink to="mailto: falestionewsletter@gmail.com">
+                    <NuxtLink to="mailto: falestionewsletter@gmail.com" target="_blank">
                         Contact
                     </NuxtLink>
                 </li>
