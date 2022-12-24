@@ -1,0 +1,19 @@
+Version 1.1
+- search bar icon
+- pick category in homepage loading
+- search bar select with arrow
+- Lazy load the article
+- ctrl + k to search bar
+- push say thanks to a databse, and show your welcome page
+- back button in  support me page
+- my pic and bio in homepage
+- turn category to tags
+- head and meta tags
+- add testing
+
+Version 1.0.1
+- article date [x]
+- cdn true
+- TOC li
+- add padding to footer
+- footer link target blank
