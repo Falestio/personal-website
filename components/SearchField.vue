@@ -21,7 +21,7 @@ watch(query, (newQuery, oldQuery) => {
 
 <template>
     <div>
-        <div class="flex flex-col w-[500px] relative" @blur="showResults = false">
+        <div class="flex flex-col w-[150px] md:w-[350px] lg:w-[500px] relative" @blur="showResults = false">
             <input type="text" v-model="query" class="p-2" @focus="showResults = true">
             <div class="z-50 absolute bg-slate-700 top-12" v-if="showResults">
                 <ul class="flex flex-col gap-2">

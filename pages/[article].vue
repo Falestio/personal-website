@@ -37,7 +37,7 @@ useHead({
 
 <template>
     <div>
-        <header class="mb-4 h-[8%] p-4 flex justify-between items-end">
+        <header class="mb-4 h-[8%] p-4 gap-2 flex justify-between items-end">
             <NuxtLink to="/">
                 <img src="@/assets/logos/falestiodev_logosvg_light.svg" alt="logo" class="w-96">
             </NuxtLink>
@@ -64,9 +64,9 @@ useHead({
             </DevOnly>
             <!-- Content -->
             <div class="cc grid grid-cols-12 gap-8">
-                <article class="col-span-9 article" v-html="article"></article>
+                <article class="col-span-12 lg:col-span-9 article" v-html="article"></article>
                 <!-- Sidebar -->
-                <aside class="col-span-3">
+                <aside class="col-span-3 hidden lg:block">
                     <div class="sticky top-4">
                         <h2 class="text-2xl font-bold mb-4">Table of Contents</h2>
                         <ul class="flex flex-col gap-4">

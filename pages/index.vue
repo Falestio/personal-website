@@ -58,7 +58,7 @@ useHead({
     <div>
         <div class="h-screen relative p-4">
             <header class="mb-4 h-[8%]">
-                <div class="flex items-end justify-between">
+                <div class="flex gap-2 items-end justify-between">
                     <NuxtLink to="/">
                         <img src="@/assets/logos/falestiodev_logosvg_light.svg" alt="logo" width="300" />
                     </NuxtLink>
@@ -66,8 +66,8 @@ useHead({
                 </div>
             </header>
 
-            <main class="grid grid-cols-12 gap-2 h-[90%]">
-                <div class="rounded border border-white col-span-3 overflow-y-auto">
+            <main class="grid grid-cols-1 md:grid-cols-12 gap-2 md:h-[90%] h-auto">
+                <div class="order-2 md:order-1 max-h-[35vh] md:max-h-min rounded border border-white col-span-1 md:col-span-3 overflow-y-auto">
                     <ul class="flex flex-col">
                         <li @click="fetchCategory('all')" class="flex items-center gap-2 w-full p-4 hover:bg-slate-800 cursor-pointer">
                             <p class="text-xl">All</p>
@@ -82,7 +82,7 @@ useHead({
                     </ul>
                 </div>
 
-                <div class="p-4 rounded border border-white col-span-6 overflow-y-auto">
+                <div class="order-3 md:order-2 max-h-[70vh] md:max-h-min p-4 rounded border border-white col-span-1 md:col-span-6 overflow-y-auto">
                     <div class="flex flex-col gap-8">
                         <template v-for="article in displayArticles" :key="article._createdAt">
                             <NuxtLink :to="`/${article.slug.current}`">
@@ -94,7 +94,7 @@ useHead({
                     </div>
                 </div>
 
-                <div class="p-4 rounded border border-white col-span-3 ">
+                <div class="order-1 md:order-3 p-4 rounded border border-white col-span-1 md:col-span-3 ">
                     <h2 class="text-2xl mb-4">Welcome!</h2>
                     <p class="text-lg mb-4">Blog Pribadi yang berisi artikel koding + random</p>
                     <ul class="flex flex-col gap-4">
