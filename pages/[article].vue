@@ -25,6 +25,14 @@ const contentPublishedDate = convertDateFormat(content._createdAt)
 
 const article = md.render(content.body)
 const articleToc = htmlToToc(article)
+
+useHead({
+    title: content.title,
+    meta: [
+        { name: 'description', content: content.secondTitle}
+    ]
+})
+
 </script>
 
 <template>

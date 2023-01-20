@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="col-span-3">
-            <h3 class="text-xl font-bold mb-4">Socials</h3>
+            <h3 class="text-xl font-bold mb-4">Medsos</h3>
             <ul class="flex flex-col gap-3">
                 <li>
                     <NuxtLink to="https://www.linkedin.com/in/falestio-hanif-al-hakim-ab4610221/" target="_blank">
@@ -26,17 +26,17 @@
             </ul>
         </div>
         <div class="col-span-3">
-            <h3 class="text-xl font-bold mb-4">Other pages</h3>
+            <h3 class="text-xl font-bold mb-4">oder</h3>
             <ul class="flex flex-col gap-3"> 
                 <li>
                     <NuxtLink to="/support" class="p-2 bg-green-700 rounded">
-                        Support me
+                        Kasih support
                     </NuxtLink>
                 </li>
                 
                 <li>
                     <NuxtLink to="mailto: falestionewsletter@gmail.com" target="_blank">
-                        Contact
+                        Kontak
                     </NuxtLink>
                 </li>
             </ul>

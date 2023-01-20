@@ -1,22 +1,24 @@
-Version 1.0.1 - Released 25 Des 2022
-- article date 
-- cdn true
-- TOC li
-- add padding to footer
-- footer link target blank
 
-Version 1.0.2
+Todo:
 - search bar icon
 - ctrl + k to search bar
 - back button in  support me page
 - search bar select with arrow
 - show loading after picking a category in homepage
 - my pic and bio in homepage
-
-Version 1.0.3
 - turn category to tags
-
-Version 1.0.4
 - add testing
 - push say thanks to a database
 - head and meta tags
+
+Next Version: 1.0.2
+- head and meta tags
+
+========= RELEASED =========
+
+Version 1.0.1 - Released 25 Des 2022
+- article date 
+- cdn true
+- TOC li
+- add padding to footer
+- footer link target blank

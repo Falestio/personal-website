@@ -45,6 +45,13 @@ const fetchCategory = async (category) => {
         displayArticles.value = await $sanity.fetch(query, params);
     }
 };
+
+useHead({
+    title: "halo kak",
+    meta: [
+        { name: 'description', content: "Blog pribadi Falestio Hanif Al Hakim"}
+    ]
+})
 </script>
 
 <template>
@@ -87,8 +94,9 @@ const fetchCategory = async (category) => {
                     </div>
                 </div>
 
-                <div class="p-4 rounded border border-white col-span-3">
-                    <h2 class="text-2xl mb-4">Hello There!</h2>
+                <div class="p-4 rounded border border-white col-span-3 ">
+                    <h2 class="text-2xl mb-4">Welcome!</h2>
+                    <p class="text-lg mb-4">Blog Pribadi yang berisi artikel koding + random</p>
                     <ul class="flex flex-col gap-4">
                         <li>
                             <NuxtLink class="p-2 rounded hover:bg-stone-900" target="_blank" to="https://www.linkedin.com/in/falestio-hanif-al-hakim-ab4610221/"> LinkedIn </NuxtLink>
@@ -97,11 +105,11 @@ const fetchCategory = async (category) => {
                             <NuxtLink class="p-2 rounded hover:bg-stone-900" target="_blank" to="https://www.instagram.com/falestiohanif/"> Instagram </NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink class="p-2 rounded hover:bg-stone-900" to="/support"> Support me </NuxtLink>
+                            <NuxtLink class="p-2 rounded hover:bg-stone-900" to="/support"> Kasih Support </NuxtLink>
                         </li>
 
                         <li>
-                            <NuxtLink class="p-2 rounded hover:bg-stone-900" to="mailto: falestionewssletter@gmail.com"> Contact </NuxtLink>
+                            <NuxtLink class="p-2 rounded hover:bg-stone-900" to="mailto: falestionewssletter@gmail.com"> Kontak </NuxtLink>
                         </li>
                     </ul>
                 </div>
