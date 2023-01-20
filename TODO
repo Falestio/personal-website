@@ -2,21 +2,24 @@
 Todo:
 - search bar icon
 - ctrl + k to search bar
-- back button in  support me page
 - search bar select with arrow
 - show loading after picking a category in homepage
 - my pic and bio in homepage
 - turn category to tags
 - add testing
 - push say thanks to a database
-- head and meta tags
-
-Next Version: 1.0.2
-- head and meta tags
 
 ========= RELEASED =========
+i.4, 20 Januari 2023
+- Responsive Design
 
-Version 1.0.1 - Released 25 Des 2022
+i.3, 20 Januari 2023
+- ubah ke bahasa Indonesia
+
+i.2, 20 Januari 2023 
+- head and meta tags
+
+i.1, 25 Des 2022
 - article date 
 - cdn true
 - TOC li
