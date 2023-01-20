@@ -9,13 +9,13 @@
 
             <div class="w-full flex flex-col gap-4">
                 <textarea class="p-4 text-xl"></textarea>
-                <button class="self-start px-4 py-2 text-white bg-blue-400 rounded">Submit</button>
+                <NuxtLink to="https://www.youtube.com/watch?v=MxodnipCunQ" target="_blank" class="self-start px-4 py-2 text-white bg-blue-400 rounded">Submit</NuxtLink>
             </div>
-            <hr class="my-8">
+            <!-- <hr class="my-8">
             <h1 class="text-4xl">Donation</h1>
             <p class="text-xl">
                 Make a donation of your choice instead 😊
-            </p>
+            </p> -->
         </div>
     </div>
 </template>
